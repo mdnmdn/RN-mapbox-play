@@ -26,9 +26,13 @@ target 'mapplay' do
     #'RCTVibration',
     #'RCTWebSocket',
     #'RCTLinkingIOS'
+    'CxxBridge',
    ]
 
   # Mapbox
   pod 'react-native-mapbox-gl', :path => '../node_modules/@mapbox/react-native-mapbox-gl'
 
+  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'GLog', :podspec => '../node_modules/react-native/third-party-podspecs/GLog.podspec'
 end

@@ -26,7 +26,6 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		926FBFB33B13DA80429D44C0 /* libPods-mapplay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8DF6344D6CFBAD625B7881E /* libPods-mapplay.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		F605EDC63220D27CBE413ECE /* libPods-mapplayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7ACBD56E0EBA10E6A28450E /* libPods-mapplayTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,7 +264,6 @@
 		40FF23839AF1A70A67342C93 /* Pods-mapplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapplay.release.xcconfig"; path = "Pods/Target Support Files/Pods-mapplay/Pods-mapplay.release.xcconfig"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
-		7C9CE2B5FB4CA9140EE22682 /* Pods-mapplayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapplayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mapplayTests/Pods-mapplayTests.release.xcconfig"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		9CE1C6DC36C8FE3136C44F0A /* Pods-mapplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapplay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapplay/Pods-mapplay.debug.xcconfig"; sourceTree = "<group>"; };
 		A8DF6344D6CFBAD625B7881E /* libPods-mapplay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapplay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -274,7 +272,6 @@
 		C72C5C028887A092B3BE3A58 /* Pods-mapplay-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapplay-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapplay-tvOSTests/Pods-mapplay-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DD0DFE92529C2D60DB93693A /* libPods-mapplay-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapplay-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7ACBD56E0EBA10E6A28450E /* libPods-mapplayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mapplayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE97AAEDE349ED66DD064DBF /* Pods-mapplayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mapplayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mapplayTests/Pods-mapplayTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
-				F605EDC63220D27CBE413ECE /* libPods-mapplayTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,8 +502,6 @@
 				40FF23839AF1A70A67342C93 /* Pods-mapplay.release.xcconfig */,
 				C72C5C028887A092B3BE3A58 /* Pods-mapplay-tvOSTests.debug.xcconfig */,
 				C66B925BC8F426D710DE698A /* Pods-mapplay-tvOSTests.release.xcconfig */,
-				FE97AAEDE349ED66DD064DBF /* Pods-mapplayTests.debug.xcconfig */,
-				7C9CE2B5FB4CA9140EE22682 /* Pods-mapplayTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -528,12 +522,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mapplayTests" */;
 			buildPhases = (
-				5ED7511E3719FEFCD09654CE /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				7A6405F33322574088209D71 /* [CP] Embed Pods Frameworks */,
-				3EDB7AA3547808623873E7E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -929,54 +920,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mapplay/Pods-mapplay-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3EDB7AA3547808623873E7E4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mapplayTests/Pods-mapplayTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5ED7511E3719FEFCD09654CE /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mapplayTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A6405F33322574088209D71 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mapplayTests/Pods-mapplayTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C7CE80AB3FD029D0341A39C1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1037,7 +980,6 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE97AAEDE349ED66DD064DBF /* Pods-mapplayTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1058,7 +1000,6 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C9CE2B5FB4CA9140EE22682 /* Pods-mapplayTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;

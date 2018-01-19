@@ -1,14 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, Platform} from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import MapboxGL from '@mapbox/react-native-mapbox-gl';
-
-import icoLocal from './assets/blue-star.png';
 
 MapboxGL.setAccessToken("pk.eyJ1IjoibWRuc3luIiwiYSI6ImNqYjJlazI1bjJhejEycW8xdHlqMWRyaDYifQ.ulhUqSzC6RBTMfb1YNxrug");
 
 
-const isAndroid = Platform.OS === 'android';
 
 const l = console.log.bind(console);
 
@@ -51,15 +48,20 @@ export default class Mapp extends React.Component {
           onDidFinishLoadingMap={l.bind(null,'onDidFinishLoadingMap')}
         >
 
+
+
           {nodes.map(v => {
 
             return (<MapboxGL.ShapeSource
               key={`vehicle-${v.id}`}
               id={`vehicleSource-${v.id}`}
               shape={MapboxGL.geoUtils.makePoint(v.coords)}
-            >
+              itemId={v.id}
 
+            >
+                {/*<MapboxGL.CircleLayer id={`b-${v.id}`} style={mapStyles.nodeBorder}/>*/}
               <MapboxGL.CircleLayer id={`bg-${v.id}`} style={mapStyles.nodeBackground} />
+
               <MapboxGL.SymbolLayer id={`i-${v.id}`}  style={[mapStyles.nodeIcon]}/>
 
             </MapboxGL.ShapeSource>);
@@ -84,9 +86,10 @@ const styles = StyleSheet.create({
   map: {
     flex: 1,
     width: '100%',
+
   },
   bottomView: {
-    //height: 70,
+    height: 70,
     width: '100%',
     borderColor: '#BBB',
     borderTopWidth: 1,
@@ -95,6 +98,11 @@ const styles = StyleSheet.create({
 
 
 const mapStyles = MapboxGL.StyleSheet.create({
+  nodeBorder: {
+    circleStrokeWidth: 2,
+    circleRadius: 27,
+    circleStrokeColor: '#187cc0',
+  },
   nodeBackground: {
     circleRadius: 27,
     circleColor: 'white',
@@ -102,9 +110,12 @@ const mapStyles = MapboxGL.StyleSheet.create({
     circleRadius: 27,
     circleStrokeColor: '#187cc0',
   },
+  vehicleCallout: {
+    //iconImage: calloutIco,
+    iconSize: 0.4,
+  },
   nodeIcon: {
     iconImage: icoUrl,
-    //iconImage: icoLocal,
-    iconSize: isAndroid ? 0.1 : 0.06,
+    iconSize: 0.04,
   },
 });

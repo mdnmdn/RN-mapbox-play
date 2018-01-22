@@ -1,12 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 
 import MapboxGL from '@mapbox/react-native-mapbox-gl';
 
-MapboxGL.setAccessToken("pk.eyJ1IjoibWRuc3luIiwiYSI6ImNqYjJlazI1bjJhejEycW8xdHlqMWRyaDYifQ.ulhUqSzC6RBTMfb1YNxrug");
-
-
-
+const IS_ANDROID = Platform.OS === 'android';
 const l = console.log.bind(console);
 
 const center = {

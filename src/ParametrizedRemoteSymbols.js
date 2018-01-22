@@ -46,7 +46,7 @@ export default class MappSingleShapeSource extends React.Component {
             id="symbolLayerSource"
             shape={featureCollection}
             images={{
-              blue: blueStar,
+              blue: remoteIcon,
               yellow: remoteIcon,
             }}
           >

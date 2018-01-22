@@ -25,7 +25,6 @@ Most of the issues regard behaviour of ShapeSource and SymbolLayer.
 * **SingleShapeSource.js**: running on androd simulator the symbols have strange behaviours, 
   colored icons became b/w, panning and zooming the icons glitches between color and b/w
   (this behaviour is visible also with other samples)
-*  
 
 
 In order to enable a specific view you have 

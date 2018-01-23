@@ -6,7 +6,8 @@
       "id": "id1",
       "properties": {
         "icon": "blue",
-        "id": "id1"
+        "id": "id1",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/agricultural_tractors_large.png"
       },
       "geometry": {
         "type": "Point",
@@ -21,7 +22,8 @@
       "id": "id2",
       "properties": {
         "icon": "blue",
-        "id": "id2"
+        "id": "id2",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/roller_large.png"
       },
       "geometry": {
         "type": "Point",
@@ -36,7 +38,8 @@
       "id": "id3",
       "properties": {
         "icon": "yellow",
-        "id": "id3"
+        "id": "id3",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/agricultural_tractors_large.png"
       },
       "geometry": {
         "type": "Point",
@@ -51,7 +54,8 @@
       "id": "id4",
       "properties": {
         "icon": "yellow",
-        "id": "id4"
+        "id": "id4",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/agricultural_tractors_large.png"
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +70,8 @@
       "id": "id5",
       "properties": {
         "icon": "blue",
-        "id": "id5"
+        "id": "id5",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/agricultural_tractors_large.png"
       },
       "geometry": {
         "type": "Point",
@@ -81,7 +86,8 @@
       "id": "id6",
       "properties": {
         "icon": "blue",
-        "id": "id6"
+        "id": "id6",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/roller_large.png"
       },
       "geometry": {
         "type": "Point",
@@ -96,7 +102,8 @@
       "id": "id7",
       "properties": {
         "icon": "yellow",
-        "id": "id7"
+        "id": "id7",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/agricultural_tractors_large.png"
       },
       "geometry": {
         "type": "Point",
@@ -111,7 +118,8 @@
       "id": "id8",
       "properties": {
         "icon": "blue",
-        "id": "id8"
+        "id": "id8",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/agricultural_tractors_large.png"
       },
       "geometry": {
         "type": "Point",
@@ -126,7 +134,8 @@
       "id": "id9",
       "properties": {
         "icon": "blue",
-        "id": "id9"
+        "id": "id9",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/agricultural_tractors_large.png"
       },
       "geometry": {
         "type": "Point",
@@ -141,7 +150,8 @@
       "id": "id10",
       "properties": {
         "icon": "yellow",
-        "id": "id10"
+        "id": "id10",
+        "url": "https://tierra-iot-static.s3.amazonaws.com/asset-icons/roller_large.png"
       },
       "geometry": {
         "type": "Point",

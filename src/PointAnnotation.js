@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Platform, Image } from 'react-native';
+import { StyleSheet, Text, View, Platform, Image, TouchableWithoutFeedback,TouchableOpacity } from 'react-native';
 import MapboxGL from '@mapbox/react-native-mapbox-gl';
 import { generatePoints } from './utils';
 
@@ -29,7 +29,24 @@ const center = {
 l(JSON.stringify(featureCollection));
 
 export default class PointAnnotation extends React.Component {
+
+  constructor(...params){
+    super(...params);
+
+    this.state = { label: '-', count: 0 };
+
+  }
+
   render() {
+
+    const self = this;
+    const setLabel = (label) => {
+      l('onSelected', label);
+      //setTimeout(() =>
+        this.setState({ label })
+      // , 50);
+    };
+
     return (
       <View style={styles.container}>
         <MapboxGL.MapView
@@ -50,25 +67,32 @@ export default class PointAnnotation extends React.Component {
               key={f.id}
               id={f.id}
               title='Test'
-              selected={false}
-              onSelected={(feature) => l('onSelected', feature)}
-              onDeselected={(ev) => l('onDeselected', ev)}
               coordinate={f.geometry.coordinates}>
 
-              <View style={styles.vehicleContainer} >
-              <Image source={callout} style={styles.callout} />
-              <Image source={{uri:f.properties.url}} style={styles.image} />
-              </View>
 
-              <MapboxGL.Callout title={f.id} />
+                <TouchableWithoutFeedback onPress={() => setLabel('--' + f.id)} >
+                  <View style={styles.vehicleContainer}  >
+                    <Image source={callout} style={styles.callout} />
+                    <Image source={{uri:f.properties.url}} style={styles.image} />
+                  </View>
+                </TouchableWithoutFeedback>
+
+
+                {/*<MapboxGL.Callout title={f.id} />*/}
             </MapboxGL.PointAnnotation>
 
           })}
 
 
         </MapboxGL.MapView>
-        <View style={styles.bottomView}>
-          <Text>-</Text>
+        <View style={styles.bottomView} >
+          <TouchableOpacity onPress={() => {
+            l('count', this.state.count);
+            this.setState({...this.state, count: this.state.count+1});
+
+          }}>
+              <Text>{this.state.count} {this.state.label}</Text>
+          </TouchableOpacity>
         </View>
       </View>
     );
